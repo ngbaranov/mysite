@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d10"/>
+      <stop offset="1" stop-color="#12161b"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6ea8fe"/>
+      <stop offset="1" stop-color="#7ee787"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g fill="none" stroke="url(#a)" opacity="0.5">
+    <circle cx="200" cy="150" r="120"/>
+    <circle cx="1000" cy="520" r="140"/>
+    <circle cx="980" cy="140" r="80"/>
+    <circle cx="220" cy="500" r="90"/>
+  </g>
+  <g>
+    <text x="80" y="220" font-family="Inter, Segoe UI, Arial" font-size="84" font-weight="800" fill="#e6e9ef">Python Developer</text>
+    <text x="80" y="300" font-family="Inter, Segoe UI, Arial" font-size="36" fill="#9aa4b2">FastAPI · PostgreSQL · Aiogram3 · Docker · Redis</text>
+    <rect x="80" y="360" width="460" height="72" rx="16" fill="url(#a)"/>
+    <text x="110" y="408" font-family="Inter, Segoe UI, Arial" font-size="32" fill="#0b0d10" font-weight="700">Web-приложения и Telegram-боты</text>
+  </g>
+</svg>
+

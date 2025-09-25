@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6ea8fe"/>
+      <stop offset="1" stop-color="#7ee787"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="168" height="168" rx="28" fill="#0b0d10" stroke="url(#g)" stroke-width="6" filter="url(#shadow)"/>
+  <g fill="none" stroke="#e6e9ef" stroke-width="6" stroke-linecap="round">
+    <path d="M70 80c-8 8-20 14-20 20s12 12 20 20"/>
+    <path d="M130 80c8 8 20 14 20 20s-12 12-20 20"/>
+    <circle cx="100" cy="86" r="8" fill="#e6e9ef"/>
+    <path d="M84 124c10 8 22 8 32 0"/>
+  </g>
+  <text x="100" y="172" text-anchor="middle" font-family="Inter, Segoe UI, Arial" font-size="16" fill="#9aa4b2">Python Dev</text>
+</svg>
+

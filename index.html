@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Портфолио Python-разработчика</title>
+  <meta name="description" content="Python разработчик: FastAPI, PostgreSQL, Aiogram 3, Docker, Redis. Web-приложения и Telegram-боты." />
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Портфолио Python-разработчика" />
+  <meta property="og:description" content="Web-приложения (FastAPI) и Telegram-боты (Aiogram 3), PostgreSQL, Redis, Docker." />
+  <meta property="og:image" content="assets/img/og.svg" />
+  <meta property="og:url" content="" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.remove('no-js')</script>
+  <script>
+    (function(){
+      try{
+        var saved = (localStorage.getItem('theme')||'').toLowerCase();
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        var mode = (saved === 'light' || saved === 'dark') ? saved : (prefersLight ? 'light' : 'dark');
+        var c = document.documentElement.classList;
+        c.remove('theme-light','theme-dark');
+        c.add('theme-' + mode);
+      }catch(e){}
+    })();
+  </script>
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="На главную">
+        <img src="assets/img/favicon.svg" alt="Логотип" width="28" height="28" />
+        <span>Python Dev</span>
+      </a>
+      <nav class="nav">
+        <a href="#stack">Стек</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему" title="Тема">
+        <span class="sun" aria-hidden="true">☀️</span>
+        <span class="moon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Привет! Я Python‑разработчик</h1>
+        <p class="lead">Делаю web‑приложения на FastAPI и Telegram‑ботов на Aiogram 3. Использую PostgreSQL, Redis, Docker. Умею подключать ИИ, работать с файлами и изображениями.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">Смотреть проекты</a>
+          <a href="#contacts" class="btn">Связаться</a>
+        </div>
+        <ul class="social">
+          <li><a href="#" id="ghLink" rel="me" aria-label="GitHub">GitHub</a></li>
+          <li><a href="#" id="tgLink" rel="me" aria-label="Telegram">Telegram</a></li>
+          <li><a href="mailto:you@example.com" id="mailLink" aria-label="Email">Email</a></li>
+        </ul>
+        <p class="note">Подставьте свои ссылки GitHub/Telegram и email в шапке страницы.</p>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/img/avatar.svg" alt="Аватар" width="180" height="180">
+      </div>
+    </section>
+
+    <section id="stack" class="container section">
+      <h2>Стек и навыки</h2>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">Aiogram 3</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">Redis</span>
+        <span class="chip">Docker</span>
+        <span class="chip">Webhooks</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">AsyncIO</span>
+        <span class="chip">REST API</span>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Проекты</h2>
+
+      <div class="filters" role="group" aria-label="Фильтр проектов">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="bot">Боты</button>
+        <input type="search" id="search" placeholder="Поиск по ключевым словам/стеку" aria-label="Поиск по проектам" />
+      </div>
+
+      <div class="grid" id="projectGrid">
+        <article class="card" data-category="web" data-tech="fastapi,webhook,postgres,redis,docker,js,ai,files,images,history">
+          <h3>Web. Чат с ИИ</h3>
+          <p class="muted">FastAPI, Webhook, PostgreSQL, Redis, Docker, JS</p>
+          <p>Чат с ИИ: выбор провайдера и модели, поддержка изображений и файлов, история чатов.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-label="Исходники проекта Чат с ИИ">GitHub</a>
+            <a class="btn small ghost" href="#" aria-label="Демо проекта Чат с ИИ">Демо</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="web" data-tech="fastapi,postgres,docker,js,search,keywords,files">
+          <h3>Единое окно (нарушители)</h3>
+          <p class="muted">FastAPI, PostgreSQL, Docker, JS</p>
+          <p>Система регистрации нарушений на предприятии: карточка нарушителя, суть нарушения, файлы, поиск по ФИО/сути/ключевым словам.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">GitHub</a>
+            <a class="btn small ghost" href="#">Демо</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="bot" data-tech="aiogram3,postgres,scheduler,horoscope,mailing">
+          <h3>BotHoroscope</h3>
+          <p class="muted">Aiogram 3, PostgreSQL, Scheduler</p>
+          <p>Бот‑гороскоп: день/неделя/месяц/год и рассылка прогнозов.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">GitHub</a>
+            <a class="btn small ghost" href="#">Демо</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="bot" data-tech="aiogram3,postgres,redis,scheduler,birthday,ai,textgen">
+          <h3>BotBirthday</h3>
+          <p class="muted">Aiogram 3, PostgreSQL, Redis, Scheduler</p>
+          <p>Напоминания о днях рождения: добавление/редактирование/удаление, генератор поздравлений (ИИ).</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">GitHub</a>
+            <a class="btn small ghost" href="#">Демо</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="bot" data-tech="aiogram,aiogram-dialog,postgres,redis,booking,tables,admin">
+          <h3>TantraSmoke</h3>
+          <p class="muted">Aiogram, AiogramDialog, PostgreSQL, Redis</p>
+          <p>Бронирование столиков в кафе: по времени/месту, схема столиков. Админка: кто и когда забронировал, редактирование столов.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">GitHub</a>
+            <a class="btn small ghost" href="#">Демо</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="bot" data-tech="aiogram3,openai,redis,files,ai,provider,model">
+          <h3>BotChatA</h3>
+          <p class="muted">Aiogram 3, OpenAI, Redis</p>
+          <p>Бот‑чат с ИИ: выбор провайдера и модели, работа с файлами.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">GitHub</a>
+            <a class="btn small ghost" href="#">Демо</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacts" class="container section">
+      <h2>Контакты</h2>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+        <li><strong>GitHub:</strong> <a href="#">github.com/your-username</a></li>
+        <li><strong>Telegram:</strong> <a href="#">@your_telegram</a></li>
+      </ul>
+      <p class="muted">Замените контакты на свои в файле index.html (ищите id ghLink, tgLink, mailLink).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Python разработчик. Сделано на HTML/CSS/JS. Развертывание на GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Python разработчик",
+    "jobTitle": "Software Developer",
+    "worksFor": { "@type": "Organization", "name": "Freelance" },
+    "knowsAbout": ["Python", "FastAPI", "Aiogram", "PostgreSQL", "Redis", "Docker", "REST API", "AsyncIO"],
+    "url": "",
+    "sameAs": []
+  }
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
