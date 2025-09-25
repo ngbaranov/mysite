@@ -23,9 +23,9 @@
   });
 
   // Social/contact links placeholders — replace with your links
-  const GH = 'https://github.com/your-username';
-  const TG = 'https://t.me/your_telegram';
-  const MAIL = 'mailto:you@example.com';
+  const GH = 'https://github.com/ngbaranov';
+  const TG = 'https://t.me/Nikolai_Baranov';
+  const MAIL = 'mailto:ngbaranov@gmail.com';
   const gh = document.getElementById('ghLink'); if(gh) gh.href = GH;
   const tg = document.getElementById('tgLink'); if(tg) tg.href = TG;
   const ml = document.getElementById('mailLink'); if(ml) ml.href = MAIL;
